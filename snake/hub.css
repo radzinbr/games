@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background: #292126;
+   margin-top: 3%;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(147, 144, 144);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+h1{
+    font-weight: 800;
+    font-size: 70px;
+    color: #bfbfbf;
+}
+
+/* classes */
+.jogos {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    
+    
+}
+
+.jogo {
+    width: 230px;
+    height: 150px;
+    border-radius: 80px;
+    border: 1px black solid;
+    box-shadow: 0px 10px 10px 0px rgb(31, 31, 31);
+}
+/* ids  */
+#snake { 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw10TN8K_sSWzRmc0fCZy1w411wDp9nO1A0g&usqp=CAU");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: none;
+    transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
+}
+/* animaçao passando em sima do icone */
+#snake ::after {
+    content: "";
+    position: absolute;
+    border-radius: 80px;
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px 0px 10px;
+    transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
+    z-index: -1;
+    
+}
+#snake:hover{
+    transform: scale(1.03,1.03);
+    z-index: 1;
+    cursor: pointer;
+}
+#bomberman{
+    background-image: url("https://s2.glbimg.com/maob9qjeSSVXuxb1SiDo3A5mrn0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/M/8/fZoFJGTcuGl1z7cY6Ixw/2016-03-17-curiosidades-bomberman.jpg");
+    background-position: center center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    position: relative;
+    overflow: none;
+    transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+#bomberman ::after {
+    content: "";
+    position: absolute;
+    border-radius: 80px;
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px 0px 10px;
+    transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
+    z-index: -1;
+    
+}
+
+#bomberman:hover{
+    transform: scale(1.03,1.03);
+    z-index: 1;
+    cursor: pointer;
+}
